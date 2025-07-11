@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.about-content{
+    text-align: right;
+}
+.about-content .heading {
+    font-size: clamp( 2rem , 5vw , 4.5rem );
+    text-align: right; 
+        margin: 1rem 0 0;
+
+}
+.heading::selection{ color: var(--main-color); }  
+.about-content .paragraph {
+    font-size: clamp( 1.2rem , 2vw , 2rem );
+    margin: .7vw 0 0rem;
+    line-height: 1.5; 
+}
+.about-content .paragraph::selection{ color: var(--main-color); }

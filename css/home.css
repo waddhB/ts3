@@ -1,0 +1,92 @@
+.home{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.home .home-content{
+    position: relative;
+    width: 90vw;
+    direction: rtl;
+    display: flex;
+    z-index: 2;
+}
+.home-content h1{
+    font-size: clamp( 2.5rem , 3vw ,  3.6rem);
+    font-weight: 1000;
+    text-shadow: 0 0 20px gray;
+    margin-bottom: 20px;
+    line-height: 1.5; 
+    text-shadow: #fdfdfd;
+}
+.home-content h3{
+    font-size: clamp( 1.1rem , 2.5vw ,  1.7rem);
+    font-weight: 900;
+    text-shadow: 0 0 20px gray;
+    margin-bottom: 30px;
+    line-height: 2; 
+    text-shadow: #fdfdfd;
+    z-index: 3;
+}
+.home-content h1::selection{
+    color: var(--main-color);
+}
+.home-content h3::selection{
+    color: var(--main-color);
+}
+.custom-line {
+    position: relative;
+    height: 25rem;        
+    width: 10px;         
+    margin-left: 20px;
+    background: var(--main-color); 
+    border-radius: 2px;   
+    box-shadow: 0px 0px 10px #b100a2,
+                 0px 0px 20px #b100a2,
+                 0px 0px 40px #b100a2,
+                 0px 0px 80px #b100a2;
+}
+.tag-box{
+    position: relative;
+    width: clamp( 17rem , 3vw ,  25rem);
+    height: clamp( 3.5rem , 3vw ,  5rem);
+    border-radius: 50px;
+    background: linear-gradient(to right,#d292ce ,#b100a2 ,#7c0071,#7c0071 , #b100a2,#d292ce);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgb(255, 255, 255, 0.3);
+}
+@keyframes animationGradient{
+    to{background-position: 200%;}
+}
+.tag-box .tag{
+    position: absolute;
+    inset: 4px 4px 4px 4px;
+    background-color: #211821;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    font-size: clamp( 1.3rem , 1vw ,  2rem);
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: white;
+}
+.tag-box .tag:hover{
+    color: var(--main-color);
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #b100a2,
+                 0px 0px 20px #b100a2,
+                 0px 0px 40px #b100a2,
+                 0px 0px 80px #b100a2;
+}
+.robot-3d{
+    scale: 1.5;
+    position: absolute;
+}
+.home-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
